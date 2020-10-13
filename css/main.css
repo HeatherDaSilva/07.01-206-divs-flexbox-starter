@@ -104,11 +104,34 @@ html {
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  padding: 2em;  
+  padding: 0 2em;
   font-weight: 700;
   height: 100%;
   color: #fff;
 }
+
+header {
+    font-size: 5em;
+}
+
+header,
+footer {
+    background-color: #222;
+    height: 150px;
+    width: 100%;
+}
+
+main {
+    background-color: #222;
+    height: 250px;
+    width: 100%;
+    font-size: 2.7em;
+}
+
+footer {
+    font-size: 2.7em;
+}
+
 
 .wrapper {
   /*add display:flex and set justify-content to space-between*/
@@ -116,33 +139,28 @@ body {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  
 }
 
 .div-1, .div-2, .div-3 {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
   color: #fff;
   line-height: 1.5em;
-  font-size: 1.25em;
-  background-color: 222;
-  height: auto;
-  width: 30%;
+  font-size: 1.6em;
+  background-color: #222;
+  height: 200px;
   display: flex;
+  width: 30%;
   justify-content: center;
   align-items: center;
 }
 
-
-@media all and (min-width: 1200px) {
-    .div-1, .div-2, .div-3 {
-      flex-basis: 30%;
-    }
-
-    .div-1, .div-2 {
-      border-right: 1px solid #555;
-      padding-right: 30px;
-    }
+.div-1, .div-2 {
+    border-right: 1px solid #ccc;
+    padding-right: 30px;
 }
+
+
+
 
 /* ==========================================================================
    Helper classes
